@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- addEventListener method -->
+    <p id="demo">Everything you can imagine is real.Believe me!!</p>
+    <button onclick="myDemo()">click me</button>
+
+    <br><br>
+    <hr>
+    <div id="demo2">hey how are you?</div>
+
+    <br><br><br>
+    <hr>
+    <div id="demo3"></div>
+    <script>
+        document.addEventListener("click",myDemo);
+        function myDemo(){
+            document.getElementById("demo").innerHTML="Yes you can do more"
+            document.getElementById("demo").style.fontSize="32px"
+        }
+    </script>
+    
+    <!-- example -2 -->
+
+    <script>
+        document.addEventListener("click", myFunc1);
+        function myFunc1() {
+            document.getElementById("demo2").innerHTML = "Im fine what about You?"
+        }
+    </script>
+
+    <!-- example --3 -->
+
+    <script>
+        document.addEventListener("click",myFunction1);
+        document.addEventListener("click",myFunction2);
+        function myFunction1(){
+            console.log("hey this is javascript");
+        }
+        function myFunction2(){
+            console.log("you can learn js step by step")
+        }
+    </script>
+
+    <!-- example --4 -->
+
+    <script>
+        document.addEventListener("mouseover",myFunction3);
+        document.addEventListener("mouseout",myFunction4);
+        document.addEventListener("click",myFunction5);
+        function myFunction3(){
+            document.getElementById("demo3").innerHTML+="mouseover <br>";
+        }
+        function myFunction4(){
+            document.getElementById("demo3").innerHTML+="mouseout <br>";
+        }
+        function myFunction5(){
+            document.getElementById("demo3").innerHTML+="clicked <br>"
+        }
+    </script>
+</body>
+
+</html>

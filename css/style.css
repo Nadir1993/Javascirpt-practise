@@ -8,3 +8,9 @@
   height: 200px;
   background-color: cadetblue;
   padding: 10px; }
+
+#myBtn {
+  padding: 12px 48px;
+  background-color: brown;
+  cursor: pointer;
+  outline: none; }
