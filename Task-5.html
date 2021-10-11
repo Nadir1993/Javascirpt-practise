@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- querySelector method -->
+        <div class="myDemo">hello my friend how are you?</div>
+        <span class="myDemo">Im fine and you?</span> <br><br>
+        <button onclick="myFunction1()">click me</button>
+
+        <br><br>
+        <hr>
+        <p>helo Canada</p>
+        <button onclick="myFunction2()">click me</button>
+        <script>
+            function myFunction1(){
+                document.querySelector(".myDemo").style.color="red"
+            }
+        </script>
+
+        <!-- example  -2 -->
+
+        <script>
+            function myFunction2(){
+                document.querySelector("p").style.backgroundColor="green"
+            }
+        </script>
+
+        <!-- example --3 -->
+        <p id="content">hello Front end Developer</p>
+        <button onclick="myFunction3()">click me</button>
+        <script>
+            function myFunction3(){
+                document.querySelector("#content").innerHTML="Im Front end Developer"
+            }
+        </script>
+        <br><br>
+        <hr>
+        <!-- example ---4 -->
+        <a href="#" target="_blank">facebook</a>
+        <a href="#">Linkedin</a><br>
+        <button id="demo1">click me</button>
+        <script>
+            document.getElementById("demo1").onclick=function(){myFunction4()};
+            function myFunction4(){
+                document.querySelector("a[target]").style.display="block"
+                document.querySelector("a[target]").style.backgroundColor="lime"
+            }
+        </script>
+    </body>
+</html>
