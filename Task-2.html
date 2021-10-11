@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- first way  createElement method-->
+    <button onclick="myFunc()">click me</button>
+    <script>
+        function myFunc(){
+            let myElement=document.createElement("div");
+            myElement.innerHTML="div element created";
+            myElement.style.color="red";
+            myElement.style.fontSize="32px";
+            document.body.appendChild(myElement);
+        }
+    </script>
+    <br><br><br>
+    <hr>
+    <!-- second way createElement method -->
+    <button id="myBtn">click me</button>
+    <script>
+        document.getElementById("myBtn").onclick=function(){myFunction()};
+        function myFunction(){
+            let myInput=document.createElement("input");
+            myInput.setAttribute("type","text");
+            myInput.setAttribute("value","your name");
+            myInput.style.color="red"
+            myInput.style.display="block"
+            document.body.appendChild(myInput);
+        }
+    </script>
+
+    <!-- third way createElement method -->
+    <br><br>
+    <hr>
+    <button onclick="myFunction2()">click me</button>
+    <div id="myDiv"></div>
+    
+    <script>
+        function myFunction2(){
+            let myParagraf=document.createElement("p");
+            myParagraf.innerHTML="this is paragraf element";
+            myParagraf.style.color="white";
+            document.getElementById("myDiv").appendChild(myParagraf);
+        }
+    </script>
+</body>
+</html>

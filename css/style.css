@@ -2,3 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+#myDiv {
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+  padding: 10px; }
