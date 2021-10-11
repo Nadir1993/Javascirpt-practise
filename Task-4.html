@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <p id="demo">5*15=?</p>
+        <br><br>
+        <button>click me</button>
+        <br><br><br>
+        <hr>
+        <!-- example --1 addEventListener -->
+        <script>
+            var x1=15;
+            var x2=5;
+
+            document.addEventListener("click",function(){
+                myFunction1(x1,x2);
+            })
+            function myFunction1(a,b){
+                document.querySelector("button");
+                var result=a*b;
+                document.getElementById("demo").innerHTML=a*b;
+            }
+        </script>
+
+        <!-- example --2 addEventListener -->
+        <script>
+            if(document.addEventListener){
+                document.addEventListener("click",myFunction)
+            }else if(document.attachEvent){
+                document.attachEvent("onclick",myFunction)
+            }
+            function myFunction(){
+                alert("this pop up messages")
+            }
+        </script>
+    </body>
+</html>
