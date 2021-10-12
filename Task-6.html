@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- querySelectorALL method -->
+    <!-- example--1 -->
+    <p class="box">hello Azerbaijan</p>
+    <div class="box">information is power</div><br>
+    <button onclick="myFunction()">click me</button>
+    <br>
+    <hr>
+    <script>
+        function myFunction() {
+            let x, i;
+            x = document.querySelectorAll(".box");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "blue";
+                x[i].style.padding = "15px";
+                x[i].style.color = "white";
+            }
+        }
+    </script>
+
+    <!-- example --2  -->
+    <h2>say yes then learn how to do it later</h2>
+    <h2>be stronger than your excuses</h2>
+    <button onclick="myFunction2()">click me</button><br>
+    <hr>
+    <script>
+        function myFunction2() {
+            let x, i;
+            x = document.querySelectorAll("h2");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "lime";
+                x[i].style.color = "brown";
+                x[i].style.padding = "15px"
+            }
+        }
+    </script>
+
+    <!-- example--3 -->
+    <div class="container">
+        <p>hello javascript</p>
+        <p>hello jquery</p>
+        <p>hello react</p>
+    </div>
+    <button onclick="myFunction3()">click me</button>
+    <script>
+        function myFunction3() {
+            let x = document.querySelectorAll(".container p");
+            x[0].style.color = "red"
+            x[2].style.color = "green"
+        }
+    </script>
+
+    <!-- example--4 -->
+    <!-- nece eded span tag i olgunu yazag. -->
+    <p>hello my world</p>
+    <span>hey how is going?</span>
+    <p>hello React</p>
+    <span>this is span tag</span>
+    <p id="demo"></p>
+    <button onclick="myFunction4()">click me</button>
+    <script>
+        function myFunction4() {
+            let x = document.querySelectorAll("span");
+            document.getElementById("demo").innerHTML = x.length;
+        }
+    </script>
+</body>
+
+</html>
