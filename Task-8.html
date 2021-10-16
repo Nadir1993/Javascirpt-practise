@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                                               <!-- strings -->
+    <!-- example --1 -->                                           
+    <script>
+      let answer="I can change my life not one can do it for me";
+      let answer2="life is beautiful";
+      let answer3="I will win sooner or later";
+      let answer4="I can believe myself";
+      document.body.innerHTML=answer +"<br>"+answer2 +"<br>"+answer3 +"<br>" +answer4;
+    </script>
+
+    <!-- example---2 -->
+    <!-- stringin uzunlugunu hesablayag -->
+    <script>
+        let myString="Im front end developer";
+        document.body.innerHTML=myString.length;
+    </script>
+
+    <!-- example --3 -->
+    <script>
+        let myText="hello Mark how are you?";
+        document.body.innerHTML=myText.slice(6,10);
+    </script>
+
+    <!-- example--4 -->
+    <script>
+        let text="hey Mark how are you";
+        document.body.innerHTML=text.slice(3)  //output Mark how are you?
+    </script>
+
+    <!-- example--5 -->
+    <script>
+        let city="Berlin,Ankara,Baku";
+        document.body.innerHTML=city.substr(7,6);
+        // substr ve slice bir birlerine benzerdir sadece ferqi ondadirki substr da 2 ci parametr uzunlugu gosterir.
+    </script>
+    <!-- example --6 -->
+    <p id="demo">Hello Javascript</p>
+    <button onclick="myFunction()">click me</button>
+    <script>
+        function myFunction(){
+            let myDemo=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=myDemo.replace("Javascript","Nadir")
+        }
+    </script>
+
+    <!-- example--7 -->
+    <p id="demo1">hello my friend</p>
+    <button onclick="myFunc1()">click me</button>
+    <script>
+        function myFunc1(){
+            let toUpper=document.getElementById("demo1").innerHTML;
+            document.getElementById("demo1").innerHTML=toUpper.toUpperCase();
+        }
+    </script>
+
+<!-- example--8 -->
+    <script>
+       let exam="HELLO JAVASCRIPT";
+       alert(exam.toLowerCase());
+    </script>
+
+    <!-- example ---9 -->
+    <!-- concat() metodu -->
+    <script>
+        let city1="Baku";
+        let city2="Istanbul";
+        let total=city1.concat(" ",city2);
+        document.body.innerHTML=total;
+    </script>
+
+    <!-- example--10 -->   <!-- Trim() method -->
+
+    <script>
+        let text2="     hello    my dear Javascript";
+        alert(text2.trim());
+    </script>
+
+    <!-- example --11   padStart() and padEnd() method -->
+
+    <script>
+        let text3="7";
+        document.body.innerHTML=text3.padStart(4,2);
+        //returns   2227;
+
+        let text4="7";
+        document.body.innerHTML=text4.padEnd(4,2);
+        //returns      7222
+    </script>
+
+    <!-- example --12   charAT and charCodeAt -->
+    <script>
+        let text5="Hello React";
+        document.body.innerHTML=text5.charAt(0);
+        // returns    H 
+
+        let text6="Hello Css";
+        document.body.innerHTML=text6.charCodeAt(0);
+    </script>
+
+    <!-- example --13  split() method -->
+
+    <script>
+        let text7="a,b,c,d,e";
+        const myArray=text7.split(",");
+        document.body.innerHTML=myArray;
+    </script>
+</body>
+</html>
